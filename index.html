@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Diet Tracker</title>
+  <!-- React & ReactDOM -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  <!-- Babel Compiler -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- jsPDF Library for PDF Export -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body class="text-slate-800 antialiased selection:bg-emerald-500 selection:text-white">
+  <div id="root"></div>
+
+  <!-- App Config & Constants -->
+  <script type="text/babel" src="js/config/constants.js"></script>
+
+  <!-- Services -->
+  <script type="text/babel" src="js/services/geminiService.js"></script>
+  <script type="text/babel" src="js/services/storageService.js"></script>
+
+  <!-- Utilities -->
+  <script type="text/babel" src="js/utils/groceryUtils.js"></script>
+  <script type="text/babel" src="js/utils/pdfExport.js"></script>
+
+  <!-- Components -->
+  <script type="text/babel" src="js/components/Icon.js"></script>
+  <script type="text/babel" src="js/components/Navbar.js"></script>
+  <script type="text/babel" src="js/components/PlanGenerator.js"></script>
+  <script type="text/babel" src="js/components/DietPlanView.js"></script>
+  <script type="text/babel" src="js/components/AiCoachChat.js"></script>
+  <script type="text/babel" src="js/components/GroceryChecklist.js"></script>
+  <script type="text/babel" src="js/components/PlanHistory.js"></script>
+  <script type="text/babel" src="js/components/ApiKeyModal.js"></script>
+
+  <!-- Main Application Entry -->
+  <script type="text/babel" src="js/App.js"></script>
+</body>
+</html>
